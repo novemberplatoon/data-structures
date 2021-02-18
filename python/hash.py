@@ -12,13 +12,18 @@ class HashTable:
         # IMPORTANT: Think about how you'd store values into the same index
         total = 0
         for char in value:
+            # Uses ASCII value from char
             total += ord(char)
+        # uses modulo operator to get an index
         return total % self.number_of_buckets
 
     def set(self, key, value):
         # here is where you'll perform your logic to insert the value into your table
         # you'll also call your hash method here to get the index where you'll store the value
+
+        # use hash function and get index value
         h = self.hash(key)
+        # use index value to insert into "array"
         self.arr[h] = value
 
     def get(self, key):

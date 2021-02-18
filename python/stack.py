@@ -15,9 +15,8 @@ class Stack:
 
   def pop(self):
     # write your code to removes the data following LIFO and return the Stack
-    self.stack.pop()
     self.total -= 1
-    return self.stack
+    return self.stack.pop()
 
   def size(self):
     # write your code that returns the size of the Stack

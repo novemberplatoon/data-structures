@@ -15,9 +15,8 @@ class Queue:
 
   def dequeue(self):
     # write your code to removes the data to the Queue following FIFO and return the Queue
-    self.queue.pop()
     self.total -= 1
-    return self.queue
+    return self.queue.pop()
 
   def size(self):
     # write your code that returns the size of the Queue
